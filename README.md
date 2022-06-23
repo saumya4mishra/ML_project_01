@@ -28,3 +28,34 @@ git push origin main
 
 -- to check remote url
 git remote -v
+
+to setup CI/CD pipeline in heroku we need 3 information
+
+1. HEROKU EMAIL_ID saumya4mishra@gmail.com
+2. API KEY : d9d7b2c9-7673-4c8a-9523-81b2fe0a522b
+3. APPLICATION: ml-regressor
+
+
+BUILD DOCKER IMAGE
+
+docker build -t <image_name>:<tagname> .
+
+e.g docker build -t ml-project:latest .
+
+NOTE: image name for docker must be lowercase
+
+
+--to list docker images
+docker images
+
+-- run docker image
+
+docker run -p 5000:5000 -e PORT=5000 <docker_id>
+
+-- to check running containers in docker
+docker ps
+
+--to stop docker container
+
+docker stop <container_id>
+
