@@ -44,7 +44,6 @@ e.g docker build -t ml-project:latest .
 
 NOTE: image name for docker must be lowercase
 
-
 --to list docker images
 docker images
 
